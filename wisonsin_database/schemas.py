@@ -1,0 +1,133 @@
+from pydantic import BaseModel
+
+class Demo(BaseModel):
+    id: int
+    unique_id: str
+    mars_id: str
+    visit: str
+    reggie_id: int
+    mars_age: str
+    bristol_type: int
+    sex: str
+    race: str
+    bmi: float
+    apoe: str
+    apoe4: str
+    diagnosis: str
+
+    class Config:
+        orm_mode = True
+
+class Diet(BaseModel):
+    id: int
+    metabolite: str
+    mars00002_v1: float
+    mars00003_v1: float
+    mars00006_v1: float
+    mars00007_v1: float
+    mars00008_v1: float
+    mars00009_v1: float
+    mars00010_v1: float
+    mars00011_v1: float
+    mars00012_v1: float
+    mars00017_v1: float
+    mars00018_v1: float
+    mars00020_v1: float
+    mars00021_v1: float
+    mars00022_v1: float
+    mars00023_v1: float
+    mars00027_v1: float
+    mars00028_v1: float
+    mars00029_v1: float
+    mars00030_v1: float
+    mars00037_v1: float
+    mars00038_v1: float
+    mars00039_v1: float
+    mars00040_v1: float
+    mars00044_v1: float
+    mars00054_v1: float
+    mars00055_v1: float
+    mars00058_v1: float
+    mars00059_v1: float
+    mars00060_v1: float
+    mars00062_v1: float
+    mars00063_v1: float
+    mars00064_v1: float
+    mars00067_v1: float
+    mars00069_v1: float
+    mars00070_v1: float
+    mars00071_v1: float
+    mars00076_v1: float
+    mars00080_v1: float
+    mars00084_v1: float
+    mars00086_v1: float
+    mars00092_v1: float
+    mars00098_v1: float
+    mars00107_v1: float
+    mars00109_v1: float
+    mars00110_v1: float
+    mars00115_v1: float
+    mars00117_v1: float
+    mars00123_v1: float
+    mars00131_v1: float
+    mars00134_v1: float
+
+    class Config:
+        orm_mode = True
+
+class Abundance(BaseModel):
+    id: int
+    species: str
+    mars00002_v1: float
+    mars00003_v1: float
+    mars00006_v1: float
+    mars00007_v1: float
+    mars00008_v1: float
+    mars00009_v1: float
+    mars00010_v1: float
+    mars00011_v1: float
+    mars00012_v1: float
+    mars00017_v1: float
+    mars00018_v1: float
+    mars00020_v1: float
+    mars00021_v1: float
+    mars00022_v1: float
+    mars00023_v1: float
+    mars00027_v1: float
+    mars00028_v1: float
+    mars00029_v1: float
+    mars00030_v1: float
+    mars00037_v1: float
+    mars00038_v1: float
+    mars00039_v1: float
+    mars00040_v1: float
+    mars00044_v1: float
+    mars00054_v1: float
+    mars00055_v1: float
+    mars00058_v1: float
+    mars00059_v1: float
+    mars00060_v1: float
+    mars00062_v1: float
+    mars00063_v1: float
+    mars00064_v1: float
+    mars00067_v1: float
+    mars00069_v1: float
+    mars00070_v1: float
+    mars00071_v1: float
+    mars00076_v1: float
+    mars00080_v1: float
+    mars00084_v1: float
+    mars00086_v1: float
+    mars00092_v1: float
+    mars00098_v1: float
+    mars00107_v1: float
+    mars00109_v1: float
+    mars00110_v1: float
+    mars00115_v1: float
+    mars00117_v1: float
+    mars00123_v1: float
+    mars00131_v1: float
+    mars00134_v1: float
+
+    class Config:
+        orm_mode = True
