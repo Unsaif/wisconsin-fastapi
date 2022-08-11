@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from wisonsin_database import schemas, models, crud
 from wisonsin_database.database import engine, SessionLocal
 from sqlalchemy.orm import Session
+from typing import List
 
 app = FastAPI()
 
@@ -14,7 +15,7 @@ def get_db():
     finally:
         db.close()
 
-@app.get('/demo', response_model=list[schemas.Demo])
+@app.get('/demo', response_model=List[schemas.Demo])
 async def demo(db: Session = Depends(get_db)):
     subject_demos = crud.get_subject_demos(db)
     return subject_demos
